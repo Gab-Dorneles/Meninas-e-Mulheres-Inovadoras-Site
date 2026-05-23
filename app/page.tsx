@@ -313,7 +313,7 @@ export default function Home() {
                 />
               </div>
               <div className="flex-1 space-y-4">
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3">um papel de 
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                     <Brain className="h-5 w-5 text-primary" />
                   </div>
