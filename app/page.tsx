@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Lightbulb, Users, BookOpen, Rocket, Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Brain, Heart, Shield, Zap } from 'lucide-react'
+import { Lightbulb, Users, BookOpen, Rocket, Mail, MapPin, Brain, Heart, Shield, Zap } from 'lucide-react'
 import { ActionsCarousel } from '@/components/actions-carousel'
 
 export default function Home() {
@@ -282,13 +282,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Strategies Section - Modern with Gradients and School Background */}
-      <section id="estrategias" className="relative bg-background py-24 md:py-36 overflow-hidden">
-        {/* Subtle School Pattern Background */}
-        <div className="absolute inset-0 opacity-[0.02] pointer-events-none bg-gradient-to-b from-transparent via-blue-100/10 to-transparent"></div>
-
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="mx-auto max-w-6xl space-y-16">
+      {/* Strategies Section - Clean Layout with Images */}
+      <section id="estrategias" className="bg-background py-24 md:py-36">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="mx-auto max-w-5xl space-y-20">
             <div className="text-center">
               <h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
                 Estratégias para Incluir Meninas em STEAM
@@ -298,222 +295,158 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-2">
-              {/* Strategy 1 */}
-              <div className="group relative overflow-hidden rounded-2xl border-2 border-transparent bg-gradient-to-br from-blue-50 to-cyan-50 p-8 transition-all hover:border-blue-300 hover:shadow-xl">
-                <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-blue-100/50 blur-2xl group-hover:bg-blue-100/70 transition-colors" />
-                <div className="relative space-y-6">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-blue-500/20">
-                    <Brain className="h-8 w-8 text-blue-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-foreground mb-3">Estímulo desde a Infância</h3>
-                    <ul className="space-y-3 text-sm text-foreground/80 leading-relaxed">
-                      <li className="flex gap-2">
-                        <span className="text-blue-500 font-bold">•</span>
-                        <span><strong>Quebrar estereótipos:</strong> Incentivar meninas a explorar blocos de montar, jogos de lógica e robótica</span>
-                      </li>
-                      <li className="flex gap-2">
-                        <span className="text-blue-500 font-bold">•</span>
-                        <span><strong>Clubes de ciências:</strong> Criar espaços focados em meninas com metodologias como Aprendizagem Baseada em Projetos (ABP)</span>
-                      </li>
-                      <li className="flex gap-2">
-                        <span className="text-blue-500 font-bold">•</span>
-                        <span><strong>Projetos práticos:</strong> Mostrar aplicações reais da tecnologia e inovação</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+            {/* Strategy 1 */}
+            <div className="flex flex-col items-center gap-8 md:flex-row md:gap-12">
+              <div className="relative h-64 w-full shrink-0 overflow-hidden rounded-2xl md:h-72 md:w-80">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Daniel%20Batista-f08a4Wtg1ZCcy7KHQ4c6WSkLQzb2hN.jpg"
+                  alt="Criança aprendendo sobre ciência"
+                  fill
+                  className="object-cover"
+                />
               </div>
-
-              {/* Strategy 2 */}
-              <div className="group relative overflow-hidden rounded-2xl border-2 border-transparent bg-gradient-to-br from-amber-50 to-orange-50 p-8 transition-all hover:border-amber-300 hover:shadow-xl">
-                <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-amber-100/50 blur-2xl group-hover:bg-amber-100/70 transition-colors" />
-                <div className="relative space-y-6">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-amber-500/20">
-                    <Heart className="h-8 w-8 text-amber-600" />
+              <div className="flex-1 space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                    <Brain className="h-5 w-5 text-primary" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-foreground mb-3">Mentoria e Representatividade</h3>
-                    <ul className="space-y-3 text-sm text-foreground/80 leading-relaxed">
-                      <li className="flex gap-2">
-                        <span className="text-amber-500 font-bold">•</span>
-                        <span><strong>Conexão com referências:</strong> Promover encontros com mulheres que atuam em STEM para inspirar</span>
-                      </li>
-                      <li className="flex gap-2">
-                        <span className="text-amber-500 font-bold">•</span>
-                        <span><strong>Visibilidade de modelos:</strong> Destacar cientistas e engenheiras mulheres, históricas e atuais</span>
-                      </li>
-                      <li className="flex gap-2">
-                        <span className="text-amber-500 font-bold">•</span>
-                        <span><strong>Senso de pertencimento:</strong> Mostrar que existem carreiras possíveis e seguras para meninas</span>
-                      </li>
-                    </ul>
-                  </div>
+                  <h3 className="text-xl font-bold md:text-2xl">Estímulo desde a Infância</h3>
                 </div>
+                <ul className="space-y-3 text-muted-foreground leading-relaxed">
+                  <li><strong className="text-foreground">Quebrar estereótipos:</strong> Incentivar meninas a explorar blocos de montar, jogos de lógica e robótica</li>
+                  <li><strong className="text-foreground">Clubes de ciências:</strong> Criar espaços focados em meninas com metodologias como Aprendizagem Baseada em Projetos (ABP)</li>
+                  <li><strong className="text-foreground">Projetos práticos:</strong> Mostrar aplicações reais da tecnologia e inovação</li>
+                </ul>
               </div>
+            </div>
 
-              {/* Strategy 3 */}
-              <div className="group relative overflow-hidden rounded-2xl border-2 border-transparent bg-gradient-to-br from-teal-50 to-emerald-50 p-8 transition-all hover:border-teal-300 hover:shadow-xl">
-                <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-teal-100/50 blur-2xl group-hover:bg-teal-100/70 transition-colors" />
-                <div className="relative space-y-6">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-teal-500/20">
-                    <Shield className="h-8 w-8 text-teal-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-foreground mb-3">Ambientes Seguros e Acolhedores</h3>
-                    <ul className="space-y-3 text-sm text-foreground/80 leading-relaxed">
-                      <li className="flex gap-2">
-                        <span className="text-teal-500 font-bold">•</span>
-                        <span><strong>Inclusão e respeito:</strong> Garantir locais que protejam e façam meninas se sentirem confortáveis</span>
-                      </li>
-                      <li className="flex gap-2">
-                        <span className="text-teal-500 font-bold">•</span>
-                        <span><strong>Liberdade para errar:</strong> Permitir que aprendam através de tentativa e erro em ambiente seguro</span>
-                      </li>
-                      <li className="flex gap-2">
-                        <span className="text-teal-500 font-bold">•</span>
-                        <span><strong>Foco na colaboração:</strong> Incentivar trabalho em equipe e resolução de problemas sociais</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+            {/* Strategy 2 */}
+            <div className="flex flex-col items-center gap-8 md:flex-row-reverse md:gap-12">
+              <div className="relative h-64 w-full shrink-0 overflow-hidden rounded-2xl md:h-72 md:w-80">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Dom%20Alano-KxtVKoZUe7U6dlRpg1wlsnMw3rgG3K.jpg"
+                  alt="Grupo de estudantes em mentoria"
+                  fill
+                  className="object-cover"
+                />
               </div>
-
-              {/* Strategy 4 */}
-              <div className="group relative overflow-hidden rounded-2xl border-2 border-transparent bg-gradient-to-br from-purple-50 to-pink-50 p-8 transition-all hover:border-purple-300 hover:shadow-xl">
-                <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-purple-100/50 blur-2xl group-hover:bg-purple-100/70 transition-colors" />
-                <div className="relative space-y-6">
-                  <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-purple-500/20">
-                    <Zap className="h-8 w-8 text-purple-600" />
+              <div className="flex-1 space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                    <Heart className="h-5 w-5 text-primary" />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-foreground mb-3">Iniciativas Específicas e Políticas Públicas</h3>
-                    <ul className="space-y-3 text-sm text-foreground/80 leading-relaxed">
-                      <li className="flex gap-2">
-                        <span className="text-purple-500 font-bold">•</span>
-                        <span><strong>Programas dedicados:</strong> Apoiar bolsas, olimpíadas e eventos para público feminino</span>
-                      </li>
-                      <li className="flex gap-2">
-                        <span className="text-purple-500 font-bold">•</span>
-                        <span><strong>Propriedade Intelectual:</strong> Desenvolver projetos que despertam criatividade e inovação</span>
-                      </li>
-                      <li className="flex gap-2">
-                        <span className="text-purple-500 font-bold">•</span>
-                        <span><strong>Engajamento em redes:</strong> Utilizar mídias sociais para divulgar perfis e carreiras em STEM</span>
-                      </li>
-                    </ul>
-                  </div>
+                  <h3 className="text-xl font-bold md:text-2xl">Mentoria e Representatividade</h3>
                 </div>
+                <ul className="space-y-3 text-muted-foreground leading-relaxed">
+                  <li><strong className="text-foreground">Conexão com referências:</strong> Promover encontros com mulheres que atuam em STEM para inspirar</li>
+                  <li><strong className="text-foreground">Visibilidade de modelos:</strong> Destacar cientistas e engenheiras mulheres, históricas e atuais</li>
+                  <li><strong className="text-foreground">Senso de pertencimento:</strong> Mostrar que existem carreiras possíveis e seguras para meninas</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Strategy 3 */}
+            <div className="flex flex-col items-center gap-8 md:flex-row md:gap-12">
+              <div className="relative h-64 w-full shrink-0 overflow-hidden rounded-2xl md:h-72 md:w-80">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Oficina%20Dom%20Alano-67BkVQvevUrz5QOgpdXZHhTCG9DCn4.jpg"
+                  alt="Ambiente de aprendizado colaborativo"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="flex-1 space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                    <Shield className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold md:text-2xl">Ambientes Seguros e Acolhedores</h3>
+                </div>
+                <ul className="space-y-3 text-muted-foreground leading-relaxed">
+                  <li><strong className="text-foreground">Inclusão e respeito:</strong> Garantir locais que protejam e façam meninas se sentirem confortáveis</li>
+                  <li><strong className="text-foreground">Liberdade para errar:</strong> Permitir que aprendam através de tentativa e erro em ambiente seguro</li>
+                  <li><strong className="text-foreground">Foco na colaboração:</strong> Incentivar trabalho em equipe e resolução de problemas sociais</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Strategy 4 */}
+            <div className="flex flex-col items-center gap-8 md:flex-row-reverse md:gap-12">
+              <div className="relative h-64 w-full shrink-0 overflow-hidden rounded-2xl md:h-72 md:w-80">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Campus%20Augustinopolis-JAP3bYOVIWn1Kt7RaWydQOWPf3nZF6.jpg"
+                  alt="Exposição de projetos científicos"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="flex-1 space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                    <Zap className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold md:text-2xl">Iniciativas Específicas e Políticas Públicas</h3>
+                </div>
+                <ul className="space-y-3 text-muted-foreground leading-relaxed">
+                  <li><strong className="text-foreground">Programas dedicados:</strong> Apoiar bolsas, olimpíadas e eventos para público feminino</li>
+                  <li><strong className="text-foreground">Propriedade Intelectual:</strong> Desenvolver projetos que despertam criatividade e inovação</li>
+                  <li><strong className="text-foreground">Engajamento em redes:</strong> Utilizar mídias sociais para divulgar perfis e carreiras em STEM</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t bg-muted/30">
+      {/* Footer - Institutional */}
+      <footer className="border-t bg-primary/5">
         <div className="container mx-auto px-4 py-16 md:px-6 md:py-20">
-          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
-            {/* About */}
-            <div className="space-y-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                <span className="text-lg font-bold">MMI</span>
-              </div>
-              <h3 className="font-semibold">Meninas e Mulheres Inovadoras</h3>
-              <p className="text-pretty text-sm text-muted-foreground leading-relaxed">
-                Um projeto da Unitins para promover a participação feminina nas áreas de STEM
+          <div className="mx-auto max-w-4xl">
+            {/* Main Content */}
+            <div className="text-center space-y-6">
+              <h3 className="text-2xl font-bold text-foreground md:text-3xl">
+                Meninas e Mulheres Inovadoras
+              </h3>
+              <p className="text-pretty text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+                O Núcleo de Inovação e Tecnologia promove iniciativas voltadas ao desenvolvimento tecnológico, à inclusão e ao fortalecimento da participação acadêmica e profissional.
               </p>
             </div>
 
             {/* Contact */}
-            <div className="space-y-4">
-              <h3 className="font-semibold">Contato</h3>
-              <div className="space-y-3 text-sm text-muted-foreground">
+            <div className="mt-10 flex flex-col items-center gap-4">
+              <h4 className="font-semibold text-foreground">Contato</h4>
+              <div className="flex flex-col items-center gap-3 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
-                  <Mail className="h-4 w-4" />
-                  <span>contato@mmi.unitins.br</span>
+                  <Mail className="h-4 w-4 text-primary" />
+                  <span>nit@unitins.br</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Phone className="h-4 w-4" />
-                  <span>(63) 3232-8000</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <MapPin className="h-4 w-4 mt-0.5" />
-                  <span>Universidade Estadual do Tocantins - Unitins<br />Palmas, TO</span>
+                <div className="flex items-center gap-2 text-center">
+                  <MapPin className="h-4 w-4 text-primary shrink-0" />
+                  <span>Quadra 109 Norte, Avenida NS 15, Lote 09, Plano Diretor Norte - Câmpus Palmas</span>
                 </div>
               </div>
             </div>
 
-            {/* Quick Links */}
-            <div className="space-y-4">
-              <h3 className="font-semibold">Links Rápidos</h3>
-              <nav className="flex flex-col space-y-3 text-sm text-muted-foreground">
-                <Link href="#home" className="transition-colors hover:text-foreground">
-                  Página Inicial
-                </Link>
-                <Link href="#objetivos" className="transition-colors hover:text-foreground">
-                  Objetivos
-                </Link>
-                <Link href="#projetos" className="transition-colors hover:text-foreground">
-                  Projetos
-                </Link>
-                <Link href="#estrategias" className="transition-colors hover:text-foreground">
-                  Estratégias
-                </Link>
-              </nav>
-            </div>
-
-            {/* Social Media */}
-            <div className="space-y-4">
-              <h3 className="font-semibold">Redes Sociais</h3>
-              <div className="flex gap-4">
-                <Link
-                  href="#"
-                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted transition-colors hover:bg-muted/80"
-                >
-                  <Facebook className="h-5 w-5" />
-                  <span className="sr-only">Facebook</span>
-                </Link>
-                <Link
-                  href="#"
-                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted transition-colors hover:bg-muted/80"
-                >
-                  <Instagram className="h-5 w-5" />
-                  <span className="sr-only">Instagram</span>
-                </Link>
-                <Link
-                  href="#"
-                  className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted transition-colors hover:bg-muted/80"
-                >
-                  <Linkedin className="h-5 w-5" />
-                  <span className="sr-only">LinkedIn</span>
-                </Link>
+            {/* Logos */}
+            <div className="mt-12 border-t pt-8">
+              <div className="mb-8 flex flex-wrap items-center justify-center gap-8">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo_NIT-01-removebg-preview-8BK4Lm2ovgUUrKH8K4Q2tvqUcPIteB.png"
+                  alt="Núcleo de Inovação Tecnológica da Unitins"
+                  width={200}
+                  height={80}
+                  className="h-16 w-auto opacity-80 transition-opacity hover:opacity-100"
+                />
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20Unitins%20vertical-bspisR7Db9O3taYdN7gNkQHpqTmJi5.png"
+                  alt="Unitins"
+                  width={120}
+                  height={120}
+                  className="h-20 w-auto opacity-80 transition-opacity hover:opacity-100"
+                />
               </div>
-              <p className="text-pretty text-xs text-muted-foreground leading-relaxed">
-                Siga-nos para acompanhar nossas atividades e novidades
-              </p>
+              <p className="text-center text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Meninas e Mulheres Inovadoras - Unitins. Todos os direitos reservados.</p>
             </div>
-          </div>
-
-          <div className="mt-12 border-t pt-8">
-            <div className="mb-8 flex flex-wrap items-center justify-center gap-8">
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo_NIT-01-removebg-preview-8BK4Lm2ovgUUrKH8K4Q2tvqUcPIteB.png"
-                alt="Núcleo de Inovação Tecnológica da Unitins"
-                width={200}
-                height={80}
-                className="h-16 w-auto opacity-80 transition-opacity hover:opacity-100"
-              />
-              <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20Unitins%20vertical-bspisR7Db9O3taYdN7gNkQHpqTmJi5.png"
-                alt="Unitins"
-                width={120}
-                height={120}
-                className="h-20 w-auto opacity-80 transition-opacity hover:opacity-100"
-              />
-            </div>
-            <p className="text-center text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Meninas e Mulheres Inovadoras - Unitins. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
