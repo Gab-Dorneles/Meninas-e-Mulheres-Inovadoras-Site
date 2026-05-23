@@ -11,26 +11,26 @@ export default function Home() {
       {/* Header - Modern Navbar with Yellow Accent */}
       <header className="fixed top-4 left-1/2 z-50 w-auto -translate-x-1/2">
         <nav className="flex items-center gap-1 rounded-full border border-amber-200/50 bg-gradient-to-r from-amber-50 to-yellow-50 px-2 py-2 shadow-lg backdrop-blur-md md:gap-2 md:px-4">
-          <Link 
-            href="#home" 
+          <Link
+            href="#home"
             className="rounded-full px-4 py-2 text-sm font-medium text-primary transition-all hover:bg-primary hover:text-primary-foreground md:px-5"
           >
             Inicio
           </Link>
-          <Link 
-            href="#objetivos" 
+          <Link
+            href="#objetivos"
             className="rounded-full px-4 py-2 text-sm font-medium text-primary transition-all hover:bg-primary hover:text-primary-foreground md:px-5"
           >
             Objetivos
           </Link>
-          <Link 
-            href="#projetos" 
+          <Link
+            href="#projetos"
             className="rounded-full px-4 py-2 text-sm font-medium text-primary transition-all hover:bg-primary hover:text-primary-foreground md:px-5"
           >
             Projetos
           </Link>
-          <Link 
-            href="#estrategias" 
+          <Link
+            href="#estrategias"
             className="rounded-full px-4 py-2 text-sm font-medium text-primary transition-all hover:bg-primary hover:text-primary-foreground md:px-5"
           >
             Estratégias
@@ -56,7 +56,7 @@ export default function Home() {
         {/* Decorative elements */}
         <div className="absolute top-20 left-10 h-32 w-32 rounded-full bg-amber-200/30 blur-3xl" />
         <div className="absolute bottom-40 right-10 h-40 w-40 rounded-full bg-teal-200/30 blur-3xl" />
-        
+
         <div className="container relative mx-auto flex min-h-screen items-center justify-center px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-10 text-center">
             {/* Logo centralizada com destaque */}
@@ -70,19 +70,19 @@ export default function Home() {
                 priority
               />
             </div>
-            
+
             <div className="max-w-2xl space-y-8">
               <p className="text-pretty text-xl font-medium text-primary md:text-2xl lg:text-3xl">
                 Incentivando meninas nas areas de Ciencia, Tecnologia, Engenharia e Matematica
               </p>
-              
+
               <Button size="lg" className="rounded-full bg-gradient-to-r from-primary to-teal-600 px-10 py-6 text-base shadow-lg transition-all hover:scale-105 hover:shadow-xl">
                 Conheca o projeto
               </Button>
             </div>
           </div>
         </div>
-        
+
         {/* Scroll indicator */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
           <div className="flex h-12 w-7 items-start justify-center rounded-full border-2 border-primary/40 p-2">
@@ -103,19 +103,19 @@ export default function Home() {
                 </h2>
                 <div className="space-y-5 text-pretty text-base leading-relaxed text-secondary-foreground/90 md:text-lg">
                   <p>
-                    O projeto <strong>Meninas e Mulheres Inovadoras</strong> tem como objetivo incentivar a participacao feminina nas areas de Ciencia, 
-                    Tecnologia, Engenharia e Matematica (STEM), promovendo igualdade de genero e ampliando oportunidades para que meninas 
+                    O projeto <strong>Meninas e Mulheres Inovadoras</strong> tem como objetivo incentivar a participacao feminina nas areas de Ciencia,
+                    Tecnologia, Engenharia e Matematica (STEM), promovendo igualdade de genero e ampliando oportunidades para que meninas
                     e mulheres desenvolvam seus potenciais criativos e inovadores.
                   </p>
                   <p>
                     De acordo com dados da UNESCO (2024), as mulheres representam apenas <strong>33,3%</strong> das pesquisadoras no mundo e cerca de <strong>35%</strong> dos estudantes nas areas de STEM, evidenciando a persistencia de desigualdades e baixa representatividade feminina nesses campos.
                   </p>
                   <p>
-                    Diante desse cenario, o projeto busca promover reflexoes sobre os desafios enfrentados pelas mulheres na ciencia e 
+                    Diante desse cenario, o projeto busca promover reflexoes sobre os desafios enfrentados pelas mulheres na ciencia e
                     na inovacao, incentivando maior visibilidade, reconhecimento e apoio as suas contribuicoes.
                   </p>
                   <p>
-                    A iniciativa envolve a comunidade academica da Unitins e estudantes da rede publica estadual do Tocantins em atividades 
+                    A iniciativa envolve a comunidade academica da Unitins e estudantes da rede publica estadual do Tocantins em atividades
                     extensionistas voltadas a valorizacao da presenca feminina na ciencia, na inovacao e no empreendedorismo.
                   </p>
                 </div>
@@ -147,7 +147,7 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-                
+
                 <div className="absolute -right-4 top-16 h-18 w-18 overflow-hidden rounded-2xl border-2 border-white shadow-lg md:h-22 md:w-22 lg:-right-8">
                   <Image
                     src="/women/marie.png"
@@ -156,7 +156,7 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-                
+
                 <div className="absolute -left-2 bottom-20 h-16 w-16 overflow-hidden rounded-xl border-2 border-white shadow-lg md:h-20 md:w-20 lg:-left-6">
                   <Image
                     src="/women/mariele.png"
@@ -165,7 +165,7 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-                
+
                 <div className="absolute -right-2 bottom-12 h-18 w-18 overflow-hidden rounded-xl border-2 border-white shadow-lg md:h-20 md:w-20 lg:-right-4">
                   <Image
                     src="/women/rosa.png"
@@ -264,17 +264,17 @@ export default function Home() {
           <div className="mx-auto max-w-6xl space-y-16">
             <div className="text-center">
               <h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
-                Projetos e Acoes
+                Projetos e Ações
               </h2>
               <p className="mt-6 text-pretty text-lg text-muted-foreground md:text-xl">
-                Iniciativas que transformam vidas e inspiram mudancas
+                Iniciativas que Transformam Vidas e Inspiram Mudanças
               </p>
             </div>
 
             {/* Actions Carousel */}
             <div className="space-y-8">
               <h3 className="text-center text-xl font-semibold text-primary md:text-2xl">
-                Um pouco das nossas Ações
+                Conheça um pouco das ações realizadas
               </h3>
               <ActionsCarousel />
             </div>
