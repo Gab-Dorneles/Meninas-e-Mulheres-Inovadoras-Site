@@ -73,7 +73,7 @@ export default function Home() {
 
             <div className="max-w-2xl space-y-8">
               <p className="text-pretty text-xl font-medium text-primary md:text-2xl lg:text-3xl">
-                Incentivando meninas nas areas de Ciencia, Tecnologia, Engenharia e Matematica
+                Promovendo a participação feminina em Ciência, Tecnologia, Engenharia e Matemática.
               </p>
 
               <Button size="lg" className="rounded-full bg-gradient-to-r from-primary to-teal-600 px-10 py-6 text-base shadow-lg transition-all hover:scale-105 hover:shadow-xl">
