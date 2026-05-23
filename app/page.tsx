@@ -398,55 +398,40 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer - Institutional */}
-      <footer className="border-t bg-primary/5">
-        <div className="container mx-auto px-4 py-16 md:px-6 md:py-20">
-          <div className="mx-auto max-w-4xl">
-            {/* Main Content */}
-            <div className="text-center space-y-6">
-              <h3 className="text-2xl font-bold text-foreground md:text-3xl">
-                Meninas e Mulheres Inovadoras
-              </h3>
-              <p className="text-pretty text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                O Núcleo de Inovação e Tecnologia promove iniciativas voltadas ao desenvolvimento tecnológico, à inclusão e ao fortalecimento da participação acadêmica e profissional.
-              </p>
+      {/* Footer - Compact */}
+      <footer className="border-t bg-muted/30 py-6">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="flex flex-col items-center gap-4 text-center">
+            <div className="flex items-center gap-6">
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo_NIT-01-removebg-preview-8BK4Lm2ovgUUrKH8K4Q2tvqUcPIteB.png"
+                alt="NIT Unitins"
+                width={120}
+                height={48}
+                className="h-10 w-auto opacity-70"
+              />
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20Unitins%20vertical-bspisR7Db9O3taYdN7gNkQHpqTmJi5.png"
+                alt="Unitins"
+                width={60}
+                height={60}
+                className="h-12 w-auto opacity-70"
+              />
             </div>
-
-            {/* Contact */}
-            <div className="mt-10 flex flex-col items-center gap-4">
-              <h4 className="font-semibold text-foreground">Contato</h4>
-              <div className="flex flex-col items-center gap-3 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <Mail className="h-4 w-4 text-primary" />
-                  <span>nit@unitins.br</span>
-                </div>
-                <div className="flex items-center gap-2 text-center">
-                  <MapPin className="h-4 w-4 text-primary shrink-0" />
-                  <span>Quadra 109 Norte, Avenida NS 15, Lote 09, Plano Diretor Norte - Câmpus Palmas</span>
-                </div>
-              </div>
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 text-xs text-muted-foreground">
+              <span className="flex items-center gap-1">
+                <Mail className="h-3 w-3" />
+                nit@unitins.br
+              </span>
+              <span className="hidden sm:inline">|</span>
+              <span className="flex items-center gap-1">
+                <MapPin className="h-3 w-3" />
+                Câmpus Palmas - Quadra 109 Norte
+              </span>
             </div>
-
-            {/* Logos */}
-            <div className="mt-12 border-t pt-8">
-              <div className="mb-8 flex flex-wrap items-center justify-center gap-8">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo_NIT-01-removebg-preview-8BK4Lm2ovgUUrKH8K4Q2tvqUcPIteB.png"
-                  alt="Núcleo de Inovação Tecnológica da Unitins"
-                  width={200}
-                  height={80}
-                  className="h-16 w-auto opacity-80 transition-opacity hover:opacity-100"
-                />
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo%20Unitins%20vertical-bspisR7Db9O3taYdN7gNkQHpqTmJi5.png"
-                  alt="Unitins"
-                  width={120}
-                  height={120}
-                  className="h-20 w-auto opacity-80 transition-opacity hover:opacity-100"
-                />
-              </div>
-              <p className="text-center text-sm text-muted-foreground">&copy; {new Date().getFullYear()} Meninas e Mulheres Inovadoras - Unitins. Todos os direitos reservados.</p>
-            </div>
+            <p className="text-xs text-muted-foreground/70">
+              &copy; {new Date().getFullYear()} Meninas e Mulheres Inovadoras - Unitins
+            </p>
           </div>
         </div>
       </footer>
