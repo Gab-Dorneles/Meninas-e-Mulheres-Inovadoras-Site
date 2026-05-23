@@ -76,8 +76,8 @@ export default function Home() {
                 Promovendo a participação feminina em Ciência, Tecnologia, Engenharia e Matemática.
               </p>
 
-              <Button size="lg" className="rounded-full bg-gradient-to-r from-primary to-teal-600 px-10 py-6 text-base shadow-lg transition-all hover:scale-105 hover:shadow-xl">
-                Conheca o projeto
+              <Button asChild size="lg" className="rounded-full bg-gradient-to-r from-primary to-teal-600 px-10 py-6 text-base shadow-lg transition-all hover:scale-105 hover:shadow-xl">
+                <Link href="#projetos">Conheça o projeto</Link>
               </Button>
             </div>
           </div>
@@ -277,6 +277,13 @@ export default function Home() {
                 Conheça um pouco das ações realizadas
               </h3>
               <ActionsCarousel />
+              
+              {/* Description of Actions */}
+              <div className="mx-auto max-w-3xl rounded-2xl bg-white/60 p-6 text-center backdrop-blur-sm md:p-8">
+                <p className="text-pretty leading-relaxed text-muted-foreground md:text-lg">
+                  Nossas ações já alcançaram o <strong className="text-foreground">Campus de Augustinópolis</strong>, o <strong className="text-foreground">Campus Palmas</strong>, além de diversas <strong className="text-foreground">escolas estaduais e municipais</strong> da região. Realizamos <strong className="text-foreground">oficinas</strong> práticas de ciência e tecnologia, <strong className="text-foreground">rodas de conversa</strong> sobre carreiras em STEM e representatividade feminina, e o <strong className="text-foreground">Inovacine</strong> - sessões de cinema com filmes que destacam mulheres na ciência, seguidas de debates inspiradores. Juntas, estamos transformando a realidade e abrindo portas para o futuro.
+                </p>
+              </div>
             </div>
           </div>
         </div>
