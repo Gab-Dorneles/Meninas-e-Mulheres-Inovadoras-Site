@@ -32,6 +32,18 @@ const actionImages = [
     src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Daniel%20Batista-f08a4Wtg1ZCcy7KHQ4c6WSkLQzb2hN.jpg",
     alt: "Estudante interagindo com banner sobre Mary Jackson",
   },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/palmasfestival-TzfX3hx4eyCJ8pLQfIpqwPJcHESaIh.jpg",
+    alt: "Festival em Palmas - Grupo de estudantes com bandeiras dos ODS",
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/palmas-hW4kHsyeDPZglMlGeU7Smatcgd7tt6.png",
+    alt: "Palmas - Estudantes em apresentação do projeto Meninas e Mulheres Inovadoras",
+  },
+  {
+    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/augustinopolisroda-xE57nF18uAXPW7gwLz1DixH1vSmg3R.jpg",
+    alt: "Augustinopolis - Roda de conversa com mulheres",
+  },
 ]
 
 export function ActionsCarousel() {
