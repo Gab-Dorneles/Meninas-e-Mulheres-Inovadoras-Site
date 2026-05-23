@@ -258,67 +258,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects Section - Science Background */}
-      <section id="projetos" className="relative bg-primary/5 py-24 md:py-36 overflow-hidden">
-        {/* Decorative Science Background */}
-        <div className="absolute inset-0 pointer-events-none">
-          {/* Floating atoms/molecules */}
-          <svg className="absolute top-10 left-10 w-24 h-24 text-primary/10" viewBox="0 0 100 100" fill="none">
-            <circle cx="50" cy="50" r="8" fill="currentColor" />
-            <ellipse cx="50" cy="50" rx="40" ry="15" stroke="currentColor" strokeWidth="2" />
-            <ellipse cx="50" cy="50" rx="40" ry="15" stroke="currentColor" strokeWidth="2" transform="rotate(60 50 50)" />
-            <ellipse cx="50" cy="50" rx="40" ry="15" stroke="currentColor" strokeWidth="2" transform="rotate(120 50 50)" />
-            <circle cx="90" cy="50" r="4" fill="currentColor" />
-            <circle cx="10" cy="50" r="4" fill="currentColor" />
-            <circle cx="70" cy="85" r="4" fill="currentColor" />
-          </svg>
-          
-          {/* Math symbols */}
-          <div className="absolute top-20 right-20 text-6xl font-light text-primary/8 select-none">+</div>
-          <div className="absolute top-40 right-40 text-4xl font-light text-cyan-500/10 select-none">x</div>
-          <div className="absolute bottom-32 left-20 text-5xl font-light text-primary/8 select-none">=</div>
-          <div className="absolute bottom-20 right-32 text-3xl font-light text-teal-500/10 select-none">%</div>
-          
-          {/* Pi symbol */}
-          <div className="absolute top-1/3 left-[5%] text-7xl font-serif text-primary/6 select-none">π</div>
-          
-          {/* Sigma */}
-          <div className="absolute bottom-1/4 right-[8%] text-6xl font-serif text-cyan-500/8 select-none">Σ</div>
-          
-          {/* DNA helix suggestion */}
-          <svg className="absolute bottom-10 left-1/4 w-16 h-32 text-primary/8" viewBox="0 0 40 80" fill="none">
-            <path d="M10 0 Q30 20 10 40 Q-10 60 10 80" stroke="currentColor" strokeWidth="2" fill="none" />
-            <path d="M30 0 Q10 20 30 40 Q50 60 30 80" stroke="currentColor" strokeWidth="2" fill="none" />
-            <line x1="10" y1="10" x2="30" y2="10" stroke="currentColor" strokeWidth="1.5" />
-            <line x1="12" y1="25" x2="28" y2="25" stroke="currentColor" strokeWidth="1.5" />
-            <line x1="10" y1="40" x2="30" y2="40" stroke="currentColor" strokeWidth="1.5" />
-            <line x1="12" y1="55" x2="28" y2="55" stroke="currentColor" strokeWidth="1.5" />
-            <line x1="10" y1="70" x2="30" y2="70" stroke="currentColor" strokeWidth="1.5" />
-          </svg>
-          
-          {/* Floating circles/dots */}
-          <div className="absolute top-1/2 right-10 w-3 h-3 rounded-full bg-yellow-400/20"></div>
-          <div className="absolute top-1/4 right-1/4 w-2 h-2 rounded-full bg-cyan-400/25"></div>
-          <div className="absolute bottom-1/3 left-1/3 w-4 h-4 rounded-full bg-primary/10"></div>
-          <div className="absolute top-2/3 left-10 w-2 h-2 rounded-full bg-teal-400/20"></div>
-          
-          {/* Light bulb idea */}
-          <svg className="absolute top-1/4 left-1/2 w-12 h-12 text-yellow-400/15" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm2 14h-4v-1h4v1zm0-2h-4v-1h4v1zm1.5-4.33l-.83.58V12h-5.34v-1.75l-.83-.58C7.54 8.95 7 8.03 7 9c0 2.76 2.24 5 5 5s5-2.24 5-5c0 .03-.54.95-1.5 1.67z"/>
-          </svg>
-          
-          {/* Gear/cog */}
-          <svg className="absolute bottom-1/4 left-[15%] w-14 h-14 text-primary/6" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19.14 12.94c.04-.31.06-.63.06-.94 0-.31-.02-.63-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.04.31-.06.63-.06.94s.02.63.06.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
-          </svg>
-          
-          {/* Beaker/flask */}
-          <svg className="absolute top-16 right-1/3 w-10 h-10 text-cyan-500/10" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M19.8 18.4L14 10.67V6.5l1.35-1.69c.26-.33.03-.81-.39-.81H9.04c-.42 0-.65.48-.39.81L10 6.5v4.17L4.2 18.4c-.49.66-.02 1.6.8 1.6h14c.82 0 1.29-.94.8-1.6z"/>
-          </svg>
-        </div>
-        
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
+      {/* Projects Section - Green Background */}
+      <section id="projetos" className="bg-primary/5 py-24 md:py-36">
+        <div className="container mx-auto px-4 md:px-6">
           <div className="mx-auto max-w-6xl space-y-16">
             <div className="text-center">
               <h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
@@ -371,7 +313,7 @@ export default function Home() {
                   <h3 className="text-xl font-bold md:text-2xl">Estímulo desde a Infância</h3>
                 </div>
                 <ul className="space-y-3 text-muted-foreground leading-relaxed">
-                  <li><strong className="text-foreground">Quebrar estereótipos:</strong> Incentivar meninas a explorar blocos de montar, jogos de l��gica e robótica</li>
+                  <li><strong className="text-foreground">Quebrar estereótipos:</strong> Incentivar meninas a explorar, jogos de lógica e robótica</li>
                   <li><strong className="text-foreground">Clubes de ciências:</strong> Criar espaços focados em meninas com metodologias como Aprendizagem Baseada em Projetos (ABP)</li>
                   <li><strong className="text-foreground">Projetos práticos:</strong> Mostrar aplicações reais da tecnologia e inovação</li>
                 </ul>
