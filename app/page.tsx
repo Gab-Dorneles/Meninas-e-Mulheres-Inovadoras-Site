@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Lightbulb, Users, BookOpen, Rocket, Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Brain, Heart, Shield, Zap } from 'lucide-react'
+import { ActionsCarousel } from '@/components/actions-carousel'
 
 export default function Home() {
   return (
@@ -270,18 +271,12 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <Card className="overflow-hidden border-2 transition-all hover:shadow-xl hover:border-primary">
-                <div className="aspect-video bg-gray-200"></div>
-              </Card>
-
-              <Card className="overflow-hidden border-2 transition-all hover:shadow-xl hover:border-primary">
-                <div className="aspect-video bg-gray-200"></div>
-              </Card>
-
-              <Card className="overflow-hidden border-2 transition-all hover:shadow-xl hover:border-primary">
-                <div className="aspect-video bg-gray-200"></div>
-              </Card>
+            {/* Actions Carousel */}
+            <div className="space-y-8">
+              <h3 className="text-center text-xl font-semibold text-primary md:text-2xl">
+                Um pouco das nossas Ações
+              </h3>
+              <ActionsCarousel />
             </div>
           </div>
         </div>
