@@ -18,6 +18,12 @@ export default function Home() {
             Inicio
           </Link>
           <Link
+            href="#sobre"
+            className="rounded-full px-4 py-2 text-sm font-medium text-primary transition-all hover:bg-primary hover:text-primary-foreground md:px-5"
+          >
+            Sobre
+          </Link>
+          <Link
             href="#objetivos"
             className="rounded-full px-4 py-2 text-sm font-medium text-primary transition-all hover:bg-primary hover:text-primary-foreground md:px-5"
           >
@@ -92,7 +98,7 @@ export default function Home() {
       </section>
 
       {/* About Section - Yellow Background */}
-      <section className="bg-secondary py-24 md:py-36">
+      <section id="sobre" className="bg-secondary py-24 md:py-36">
         <div className="container mx-auto px-4 md:px-6">
           <div className="mx-auto max-w-7xl">
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
@@ -184,9 +190,69 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Objectives Section - White Background */}
-      <section id="objetivos" className="bg-background py-24 md:py-36">
-        <div className="container mx-auto px-4 md:px-6">
+      {/* Objectives Section - With Decorative Background */}
+      <section id="objetivos" className="relative bg-background py-24 md:py-36 overflow-hidden">
+        {/* Decorative Background - Connected to Projects Section */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Soft gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.02] to-primary/5"></div>
+          
+          {/* Connecting dots pattern */}
+          <svg className="absolute top-0 left-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="dots-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                <circle cx="20" cy="20" r="1.5" fill="currentColor" className="text-primary" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#dots-pattern)" />
+          </svg>
+          
+          {/* Decorative circles - targets/goals */}
+          <svg className="absolute top-20 right-10 w-32 h-32 text-primary/8" viewBox="0 0 100 100" fill="none">
+            <circle cx="50" cy="50" r="45" stroke="currentColor" strokeWidth="1.5" />
+            <circle cx="50" cy="50" r="30" stroke="currentColor" strokeWidth="1.5" />
+            <circle cx="50" cy="50" r="15" stroke="currentColor" strokeWidth="1.5" />
+            <circle cx="50" cy="50" r="4" fill="currentColor" />
+          </svg>
+          
+          {/* Connected nodes - network/collaboration */}
+          <svg className="absolute bottom-20 left-10 w-40 h-40 text-teal-500/6" viewBox="0 0 100 100" fill="none">
+            <circle cx="20" cy="20" r="6" fill="currentColor" />
+            <circle cx="80" cy="30" r="6" fill="currentColor" />
+            <circle cx="50" cy="70" r="6" fill="currentColor" />
+            <circle cx="30" cy="50" r="4" fill="currentColor" />
+            <circle cx="70" cy="60" r="4" fill="currentColor" />
+            <line x1="20" y1="20" x2="80" y2="30" stroke="currentColor" strokeWidth="1" />
+            <line x1="20" y1="20" x2="50" y2="70" stroke="currentColor" strokeWidth="1" />
+            <line x1="80" y1="30" x2="50" y2="70" stroke="currentColor" strokeWidth="1" />
+            <line x1="30" y1="50" x2="70" y2="60" stroke="currentColor" strokeWidth="1" />
+            <line x1="20" y1="20" x2="30" y2="50" stroke="currentColor" strokeWidth="1" />
+            <line x1="80" y1="30" x2="70" y2="60" stroke="currentColor" strokeWidth="1" />
+          </svg>
+          
+          {/* Lightbulb - ideas */}
+          <svg className="absolute top-1/3 left-[8%] w-16 h-16 text-amber-400/10" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm2 14h-4v-1h4v1zm0-2h-4v-1h4v1zM9 20h6v1c0 .55-.45 1-1 1h-4c-.55 0-1-.45-1-1v-1z"/>
+          </svg>
+          
+          {/* Rocket - progress */}
+          <svg className="absolute bottom-1/4 right-[12%] w-14 h-14 text-primary/8" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.5c0 0-4 4-4 9.5c0 2.39 1.34 4.46 3 5.74V20c0 .55.45 1 1 1s1-.45 1-1v-2.26c1.66-1.28 3-3.35 3-5.74c0-5.5-4-9.5-4-9.5zm0 12c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM5 12c0-1.5.5-3 1-4L4 7c-1.5 2-2 4-2 5s.5 3 2 5l2-1c-.5-1-1-2.5-1-4zm14 0c0 1.5-.5 3-1 4l2 1c1.5-2 2-4 2-5s-.5-3-2-5l-2 1c.5 1 1 2.5 1 4z"/>
+          </svg>
+          
+          {/* Stars decoration */}
+          <div className="absolute top-16 left-1/4 w-3 h-3 rotate-45 bg-amber-300/15"></div>
+          <div className="absolute top-2/3 right-1/4 w-2 h-2 rotate-45 bg-primary/10"></div>
+          <div className="absolute bottom-32 left-1/3 w-2.5 h-2.5 rotate-45 bg-teal-400/12"></div>
+          
+          {/* Curved path - journey */}
+          <svg className="absolute top-0 right-0 w-64 h-64 text-primary/[0.03]" viewBox="0 0 200 200" fill="none">
+            <path d="M0 100 Q50 50 100 100 T200 100" stroke="currentColor" strokeWidth="2" fill="none" />
+            <path d="M0 130 Q50 80 100 130 T200 130" stroke="currentColor" strokeWidth="2" fill="none" />
+          </svg>
+        </div>
+        
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="mx-auto max-w-6xl space-y-16">
             <div className="text-center">
               <h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
